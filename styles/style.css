@@ -60,6 +60,7 @@
 
 .header__link{
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration{
@@ -166,7 +167,6 @@
 .table__cell{
   width: 250px;
   margin: 60px 0 0;
-
 }
 
 .table__heading{
@@ -187,14 +187,18 @@
 .feynman{
   height: 890px;
   background-color:#f2f2f2;
-  padding-top: 100px;
+  background-image: url("../images/feynman.png");
+  background-position: left bottom;
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  /*padding-top: 100px;*/
   margin: 0;
   position: relative;
 }
 
 .feynman__title{
   margin: 0 auto;
-  padding: 0 0 70px;
+  padding: 100px 0 70px;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -221,8 +225,9 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
 }
-
+/*
 .feynman__img{
   position: absolute;
   left: 0;
@@ -230,7 +235,7 @@
   z-index: 1;
   height: 637px;
   width: 867px;
-}
+}*/
 
 /*стили для части kaufman, черная таблица*/
 
@@ -241,6 +246,7 @@
   position: relative;
   z-index: -2;
   overflow: hidden;
+  margin: 0;
 }
 
 .section-title_theme_dark{
@@ -278,18 +284,45 @@
 
 /*стили для footer*/
 
-.footer
-{
+.footer{
   background-color:  #1f1f1f;
   color: white;
   max-height: 350px;
-  display: flexbox;
-  flex-direction: column;
+  border:red 5px solid;
+  margin: 0 auto;
+}
 
+.footer__columns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.footer__column{
+
+}
+
+.column_content_copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
 }
 
 .logo_place_footer{
   background-image: url("../images/logo_place_footer.svg");
   display: flex;
+}
 
+.footer__author{
+  display: flex;
+}
+
+.column_content_info{
+
+}
+
+.footer__column-links{
+  list-style: none;
 }
