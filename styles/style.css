@@ -42,7 +42,6 @@
   font-weight: 600;
   width: 730px;
   margin: 0 0 0 64px;
-  width: 730px;
   z-index: 3;
 }
 
@@ -113,7 +112,7 @@
   font-size: 24px;
   font-weight: normal;
   width: 80%;
-  min-width: 784px
+  min-width: 784px;
   margin: 0;
   padding: 0;
 }
@@ -186,12 +185,9 @@
 
 /*стили для части Feynman*/
 .feynman {
-  height: 890px;
-  background-color:#f2f2f2;
-  background-image: url('../images/feynman.png');
-  background-position: left bottom;
+  min-height: 890px;
+  background: no-repeat left bottom url('../images/feynman.png'), #F2F2F2;
   background-size: 867px 637px;
-  background-repeat: no-repeat;
   margin: 0;
   position: relative;
 }
@@ -229,15 +225,15 @@
 }
 
 /*стили для части kaufman, черная таблица*/
-
 .kaufman {
-  background-color: #1f1f1f;
   color: white;
   padding: 90px 0;
   position: relative;
   z-index: -2;
   overflow: hidden;
   margin: 0;
+  background: no-repeat top right -210px url('../images/kaufman-triangle.svg'),  #1f1f1f;
+  background-size: 877px 877px;
 }
 
 .section-title_theme_dark {
@@ -264,15 +260,6 @@
   font-weight: normal;
 }
 
-.kaufman__triangle {
-  position: absolute;
-  width: 877px;
-  height: 877px;
-  right: -210px;
-  top: 0;
-  z-index: -1;
-}
-
 /*стили для footer*/
 .footer {
   background-color:  #1f1f1f;
@@ -282,6 +269,7 @@
   padding-bottom: 40px;
   min-height: 350px;
   display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns {
