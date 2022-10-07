@@ -9,11 +9,11 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*стили блока header*/
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -21,21 +21,21 @@
   position: relative;
 }
 
-.logo{
+.logo {
   width: 228px;
   height: 32px;
   z-index: 1;
   margin: 0;
 }
 
-.logo_place_header{
-  background-image: url("../images/logo_place_header.svg");
+.logo_place_header {
+  background-image: url('../images/logo_place_header.svg');
   position: absolute;
   top: 30px;
   left: 64px;
 }
 
-.header__title{
+.header__title {
   display: flex;
   font-size: 102px;
   line-height: 96px;
@@ -46,7 +46,7 @@
   z-index: 3;
 }
 
-.header__subtitle{
+.header__subtitle {
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -58,12 +58,12 @@
   margin: 0;
 }
 
-.header__link{
+.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
-.header__main-illustration{
+.header__main-illustration {
   display: block;
   width: 765px;
   height: 608px;
@@ -86,19 +86,19 @@
 }
 
 /*стили блока description*/
-.description{
+.description {
   display: flex;
   flex-direction: column;
 }
 
-.two-columns{
+.two-columns {
   display: flex;
   width: 80%;
   margin: 100px auto;
   justify-content: space-between;
 }
 
-.two-columns__brief{
+.two-columns__brief {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -108,7 +108,7 @@
   padding: 0;
 }
 
-.two-columns__main-text{
+.two-columns__main-text {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -118,26 +118,26 @@
   padding: 0;
 }
 
-.two-columns__paragraph{
+.two-columns__paragraph {
   margin: 0 0 30px 0;
 }
 
-.two-columns__paragraph:last-of-type{
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
-.two-columns__accent{
+.two-columns__accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
 
 /*стили для части digits*/
-.digits{
+.digits {
   margin: 0;
 }
 
-.section-title{
+.section-title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -146,7 +146,7 @@
   text-align: center;
 }
 
-.section-subtitle{
+.section-subtitle {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -155,28 +155,29 @@
   text-align: center;
 }
 
-.table{
+.table {
   list-style: none;
   width: 1100px;
   margin: 0 auto 100px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.table__cell{
+.table__cell {
   width: 250px;
   margin: 60px 0 0;
 }
 
-.table__heading{
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
   margin: 0;
 }
 
-.table__text{
+.table__text {
   margin:20px 0 0;
   line-height: 1.2;
   font-size: 18px;
@@ -184,19 +185,18 @@
 }
 
 /*стили для части Feynman*/
-.feynman{
+.feynman {
   height: 890px;
   background-color:#f2f2f2;
-  background-image: url("../images/feynman.png");
+  background-image: url('../images/feynman.png');
   background-position: left bottom;
   background-size: 867px 637px;
   background-repeat: no-repeat;
-  /*padding-top: 100px;*/
   margin: 0;
   position: relative;
 }
 
-.feynman__title{
+.feynman__title {
   margin: 0 auto;
   padding: 100px 0 70px;
   width: 648px;
@@ -206,7 +206,7 @@
   text-align: center;
 }
 
-.feynman__subtitle{
+.feynman__subtitle {
   margin: 0 auto;
   padding: 0;
   line-height: 51px;
@@ -217,7 +217,7 @@
   z-index: 3;
 }
 
-.feynman__link{
+.feynman__link {
   color:  #2f80ed;
   position: absolute;
   right: 48px;
@@ -227,19 +227,10 @@
   font-weight: normal;
   text-decoration: none;
 }
-/*
-.feynman__img{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  height: 637px;
-  width: 867px;
-}*/
 
 /*стили для части kaufman, черная таблица*/
 
-.kaufman{
+.kaufman {
   background-color: #1f1f1f;
   color: white;
   padding: 90px 0;
@@ -249,13 +240,13 @@
   margin: 0;
 }
 
-.section-title_theme_dark{
+.section-title_theme_dark {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
 }
 
-.section-subtitle_theme_dark{
+.section-subtitle_theme_dark {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -267,14 +258,14 @@
   margin-top: 80px;
 }
 
-.table__text_theme_dark{
+.table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.kaufman__triangle{
-  position:absolute;
+.kaufman__triangle {
+  position: absolute;
   width: 877px;
   height: 877px;
   right: -210px;
@@ -283,46 +274,80 @@
 }
 
 /*стили для footer*/
-
-.footer{
+.footer {
   background-color:  #1f1f1f;
   color: white;
-  max-height: 350px;
-  border:red 5px solid;
-  margin: 0 auto;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: 350px;
+  display: flex;
 }
 
-.footer__columns{
+.footer__columns {
+  width: 90%;
   display: flex;
+  margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: space-between;
 }
 
-.footer__column{
-
+.footer__column {
+  margin: 0;
 }
 
-.column_content_copyright{
+.column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
+  margin: 0;
 }
 
-.logo_place_footer{
-  background-image: url("../images/logo_place_footer.svg");
+.logo_place_footer {
+  background-image: url('../images/logo_place_footer.svg');
   display: flex;
 }
 
-.footer__author{
-  display: flex;
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  margin: 0;
 }
 
-.column_content_info{
-
+.column_content_info {
+  padding-bottom: 16px;
 }
 
-.footer__column-links{
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.footer__column-links {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__column-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  padding-right: 10px;
 }
