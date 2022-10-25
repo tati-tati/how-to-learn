@@ -3,8 +3,6 @@
   list-style: none;
   flex-wrap: wrap;
   width: 920px;
-  align-items: center;
-  /*justify-content: space-between;*/
   column-gap: 100px;
   margin: auto;
   padding: 0;
