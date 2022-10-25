@@ -7,4 +7,5 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
