@@ -10,3 +10,4 @@
 * добавить шрифты
 * переписать файл README.md
 
+https://tati-tati.github.io/how-to-learn/
